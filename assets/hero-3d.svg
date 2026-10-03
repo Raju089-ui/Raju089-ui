@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" style="font-family: 'Segoe UI', system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0a192f" flood-opacity="0.15"/>
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="cloud-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="glass-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+  </defs>
+  
+  
+    <g transform="translate(50, 100)">
+        <!-- 3D Cloud Center -->
+        <g transform="translate(450, 50)">
+            <ellipse cx="150" cy="150" rx="200" ry="80" fill="url(#cloud-grad)" filter="url(#shadow)"/>
+            <ellipse cx="150" cy="140" rx="180" ry="70" fill="#f8fafc"/>
+            
+            <!-- Nodes -->
+            <g transform="translate(150, 90)">
+                <rect x="-40" y="-20" width="80" height="40" rx="8" fill="#0078d4" filter="url(#glow-blue)"/>
+                <text x="0" y="5" fill="white" font-size="14" font-weight="bold" text-anchor="middle">AZURE</text>
+            </g>
+            
+            <g transform="translate(40, 180)">
+                <rect x="-40" y="-20" width="80" height="40" rx="8" fill="#326ce5"/>
+                <text x="0" y="5" fill="white" font-size="14" font-weight="bold" text-anchor="middle">AKS</text>
+            </g>
+            
+            <g transform="translate(150, 210)">
+                <rect x="-40" y="-20" width="80" height="40" rx="8" fill="#8661c5"/>
+                <text x="0" y="5" fill="white" font-size="14" font-weight="bold" text-anchor="middle">TERRAFORM</text>
+            </g>
+            
+            <g transform="translate(260, 180)">
+                <rect x="-40" y="-20" width="80" height="40" rx="8" fill="#00b294"/>
+                <text x="0" y="5" fill="white" font-size="14" font-weight="bold" text-anchor="middle">MONITOR</text>
+            </g>
+            
+            <g transform="translate(150, 150)">
+                <rect x="-30" y="-15" width="60" height="30" rx="15" fill="#1e293b"/>
+                <text x="0" y="4" fill="#00b7c3" font-size="10" font-weight="bold" text-anchor="middle">CI/CD</text>
+            </g>
+            
+            <!-- Connections -->
+            <path d="M 150 110 L 150 135 M 40 160 L 120 150 M 260 160 L 180 150 M 150 165 L 150 190" stroke="#0078d4" stroke-width="2" stroke-dasharray="4 4">
+                <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+            </path>
+        </g>
+    </g>
+    
+</svg>
