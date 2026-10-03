@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f4fd"/>
+      <stop offset="100%" stop-color="#f0f6ff"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e6f2ff"/>
+    </linearGradient>
+    <linearGradient id="azureBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0078d4"/>
+      <stop offset="100%" stop-color="#005a9e"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00b7c3"/>
+      <stop offset="100%" stop-color="#0078d4"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8661c5"/>
+      <stop offset="100%" stop-color="#5c2d91"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00b294"/>
+      <stop offset="100%" stop-color="#008272"/>
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0078d4" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#00b7c3" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0078d4" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="lineV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0078d4" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00b7c3" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0078d4" stop-opacity="0.1"/>
+    </linearGradient>
+    <!-- Shadows -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0078d4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0078d4" flood-opacity="0.15"/>
+    </filter>
+    <filter id="glowShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="10" flood-color="#00b7c3" flood-opacity="0.2"/>
+    </filter>
+    <filter id="cloudShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#0a3d6e" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="480" rx="16" fill="url(#skyGrad)"/>
+
+  <!-- Subtle grid dots -->
+  <g opacity="0.06">
+    <circle cx="50" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="100" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="150" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="200" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="250" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="300" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="350" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="400" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="450" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="500" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="550" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="600" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="650" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="700" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="750" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="800" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="850" cy="50" r="1.5" fill="#0078d4"/>
+    <circle cx="50" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="100" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="150" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="700" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="750" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="800" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="850" cy="100" r="1.5" fill="#0078d4"/>
+    <circle cx="50" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="100" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="150" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="700" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="750" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="800" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="850" cy="380" r="1.5" fill="#0078d4"/>
+    <circle cx="50" cy="430" r="1.5" fill="#0078d4"/>
+    <circle cx="100" cy="430" r="1.5" fill="#0078d4"/>
+    <circle cx="150" cy="430" r="1.5" fill="#0078d4"/>
+    <circle cx="700" cy="430" r="1.5" fill="#0078d4"/>
+    <circle cx="750" cy="430" r="1.5" fill="#0078d4"/>
+    <circle cx="800" cy="430" r="1.5" fill="#0078d4"/>
+    <circle cx="850" cy="430" r="1.5" fill="#0078d4"/>
+  </g>
+
+  <!-- Main cloud shape -->
+  <g filter="url(#cloudShadow)">
+    <path d="M220 300 Q220 220 300 200 Q310 140 380 130 Q420 90 480 110 Q530 80 580 120 Q640 100 660 160 Q720 170 720 220 Q750 240 740 280 Q740 320 700 330 L240 330 Q200 330 220 300Z" fill="url(#cloudGrad)" opacity="0.7"/>
+  </g>
+
+  <!-- Connection paths -->
+  <g stroke="url(#pathGrad)" stroke-width="2" fill="none">
+    <!-- Dev to Git -->
+    <line x1="450" y1="80" x2="310" y2="155" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Dev to Azure DevOps -->
+    <line x1="450" y1="80" x2="450" y2="155" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Dev to Docker -->
+    <line x1="450" y1="80" x2="590" y2="155" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Git to Terraform -->
+    <line x1="310" y1="195" x2="250" y2="265" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Azure DevOps to Azure (center) -->
+    <line x1="450" y1="195" x2="450" y2="265" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Docker to AKS -->
+    <line x1="590" y1="195" x2="590" y2="265" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Terraform to Azure -->
+    <line x1="250" y1="305" x2="380" y2="375" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Azure to Monitor -->
+    <line x1="450" y1="305" x2="450" y2="375" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- AKS to Azure -->
+    <line x1="590" y1="305" x2="520" y2="375" stroke="url(#lineV)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Cross connections -->
+    <line x1="310" y1="195" x2="450" y2="265" stroke="url(#lineV)" stroke-width="1" opacity="0.3"/>
+    <line x1="590" y1="195" x2="450" y2="265" stroke="url(#lineV)" stroke-width="1" opacity="0.3"/>
+    <!-- Monitor to Security -->
+    <line x1="660" y1="280" x2="700" y2="375" stroke="url(#lineV)" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Developer Node (Top) -->
+  <g filter="url(#cardShadow)">
+    <rect x="400" y="45" width="100" height="40" rx="10" fill="white" stroke="#0078d4" stroke-width="1.2"/>
+    <text x="450" y="70" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#1a3a5c">Developer</text>
+  </g>
+
+  <!-- Git Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="260" y="150" width="100" height="50" rx="12" fill="white"/>
+    <rect x="260" y="150" width="100" height="50" rx="12" fill="url(#azureBlue)" opacity="0.08"/>
+    <text x="310" y="170" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#0078d4">⎇</text>
+    <text x="310" y="190" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Git</text>
+  </g>
+
+  <!-- Azure DevOps Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="388" y="150" width="124" height="50" rx="12" fill="white"/>
+    <rect x="388" y="150" width="124" height="50" rx="12" fill="url(#cyanGrad)" opacity="0.08"/>
+    <text x="450" y="170" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#0078d4">⟲</text>
+    <text x="450" y="190" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Azure DevOps</text>
+  </g>
+
+  <!-- Docker Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="150" width="100" height="50" rx="12" fill="white"/>
+    <rect x="540" y="150" width="100" height="50" rx="12" fill="url(#cyanGrad)" opacity="0.08"/>
+    <text x="590" y="170" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#00b7c3">⬡</text>
+    <text x="590" y="190" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Docker</text>
+  </g>
+
+  <!-- Terraform Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="195" y="260" width="110" height="50" rx="12" fill="white"/>
+    <rect x="195" y="260" width="110" height="50" rx="12" fill="url(#purpleGrad)" opacity="0.08"/>
+    <text x="250" y="280" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#5c2d91">⬢</text>
+    <text x="250" y="300" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Terraform</text>
+  </g>
+
+  <!-- Azure (Center) Node -->
+  <g filter="url(#glowShadow)">
+    <rect x="395" y="255" width="110" height="55" rx="14" fill="white" stroke="#0078d4" stroke-width="1.5"/>
+    <rect x="395" y="255" width="110" height="55" rx="14" fill="url(#azureBlue)" opacity="0.1"/>
+    <text x="450" y="278" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" fill="#0078d4">☁</text>
+    <text x="450" y="300" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0078d4">Azure</text>
+  </g>
+
+  <!-- AKS Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="260" width="100" height="50" rx="12" fill="white"/>
+    <rect x="540" y="260" width="100" height="50" rx="12" fill="url(#cyanGrad)" opacity="0.08"/>
+    <text x="590" y="280" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#326ce5">⎈</text>
+    <text x="590" y="300" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">AKS</text>
+  </g>
+
+  <!-- Monitoring Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="395" y="370" width="110" height="50" rx="12" fill="white"/>
+    <rect x="395" y="370" width="110" height="50" rx="12" fill="url(#tealGrad)" opacity="0.08"/>
+    <text x="450" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#008272">◉</text>
+    <text x="450" y="410" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Monitoring</text>
+  </g>
+
+  <!-- Security Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="645" y="370" width="110" height="50" rx="12" fill="white"/>
+    <rect x="645" y="370" width="110" height="50" rx="12" fill="url(#purpleGrad)" opacity="0.06"/>
+    <text x="700" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#5c2d91">⛊</text>
+    <text x="700" y="410" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Security</text>
+  </g>
+
+  <!-- Production Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="195" y="370" width="130" height="50" rx="12" fill="white"/>
+    <rect x="195" y="370" width="130" height="50" rx="12" fill="url(#tealGrad)" opacity="0.08"/>
+    <text x="260" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#008272">▶</text>
+    <text x="260" y="410" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1a3a5c">Production</text>
+  </g>
+
+  <!-- Floating accent shapes -->
+  <circle cx="120" cy="180" r="30" fill="#0078d4" opacity="0.04"/>
+  <circle cx="780" cy="140" r="40" fill="#00b7c3" opacity="0.04"/>
+  <circle cx="800" cy="400" r="25" fill="#5c2d91" opacity="0.04"/>
+  <circle cx="100" cy="350" r="20" fill="#008272" opacity="0.04"/>
+
+  <!-- Small floating dots -->
+  <circle cx="160" cy="120" r="3" fill="#0078d4" opacity="0.15"/>
+  <circle cx="740" cy="110" r="3" fill="#00b7c3" opacity="0.15"/>
+  <circle cx="820" cy="300" r="2.5" fill="#5c2d91" opacity="0.12"/>
+  <circle cx="80" cy="270" r="2.5" fill="#008272" opacity="0.12"/>
+  <circle cx="130" cy="420" r="2" fill="#0078d4" opacity="0.1"/>
+  <circle cx="770" cy="440" r="2" fill="#00b7c3" opacity="0.1"/>
+
+  <!-- Label -->
+  <text x="450" y="458" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="500" fill="#0078d4" opacity="0.5" letter-spacing="3">AZURE CLOUD ENGINEERING LAB</text>
+</svg>
