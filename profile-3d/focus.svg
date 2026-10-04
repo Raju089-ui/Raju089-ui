@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="396" viewBox="0 0 1000 396" role="img">
+<title>Current focus</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f5f9ff"/><stop offset="100%" stop-color="#e6f0fb"/></linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0078d4"/><stop offset="100%" stop-color="#00b7c3" stop-opacity="0"/></linearGradient>
+<radialGradient id="glow" cx="50%" cy="50%"><stop offset="0%" stop-color="#0078d4" stop-opacity="0.22"/><stop offset="100%" stop-color="#0078d4" stop-opacity="0"/></radialGradient>
+<filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+
+</defs>
+<style>
+.h1    { font: 700 38px 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif; fill: #1a3a5c; }
+.h2    { font: 700 27px 'Segoe UI', Ubuntu, sans-serif; fill: #1a3a5c; }
+.sub   { font: 400 16px 'Segoe UI', Ubuntu, sans-serif; fill: #5b7694; }
+.sec   { font: 600 13px 'Segoe UI', Ubuntu, sans-serif; fill: #5b7694; letter-spacing: 2.6px; }
+.lbl   { font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #5b7694; letter-spacing: .8px; }
+.lblb  { font: 700 13px 'Segoe UI', Ubuntu, sans-serif; fill: #1a3a5c; letter-spacing: .4px; }
+.body  { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: #5b7694; }
+.stat  { font: 700 26px 'Segoe UI', Ubuntu, sans-serif; fill: #1a3a5c; }
+.slabv { font: 700 15px 'Segoe UI', Ubuntu, sans-serif; fill: #ffffff; }
+.slabl { font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #5b7694; letter-spacing: .6px; }
+.chip  { font: 500 11px 'Segoe UI', Ubuntu, sans-serif; letter-spacing: .4px; }
+.foot  { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #8ca4bd; }
+.tile  { font: 700 13px 'Segoe UI', Ubuntu, sans-serif; letter-spacing: .3px; }
+.rise  { animation: rise 1s cubic-bezier(.2,.8,.3,1) both; }
+@keyframes rise { from { opacity: 0; transform: translateY(20px) }
+                  to   { opacity: 1; transform: translateY(0) } }
+</style>
+<rect width="1000" height="396" rx="18" fill="url(#bg)"/>
+<g class="rise"><text x="54" y="56" class="sec">CURRENT FOCUS</text><rect x="54" y="66" width="320" height="2" rx="1" fill="url(#rule)"/><ellipse cx="180" cy="236.4" rx="45.76" ry="22" fill="#9fb6cf" opacity="0.30" filter="url(#soft)"/><polygon points="136,127.7 180,149.7 180,254 136,232" fill="#003c6a"/><polygon points="224,127.7 180,149.7 180,254 224,232" fill="#005698"/><polygon points="180,105.7 224,127.7 180,149.7 136,127.7" fill="#0078d4"/><text x="180" y="282" text-anchor="middle" class="lbl">Advanced Azure</text><ellipse cx="340" cy="236.4" rx="45.76" ry="22" fill="#9fb6cf" opacity="0.30" filter="url(#soft)"/><polygon points="296,132.88 340,154.88 340,254 296,232" fill="#3d215e"/><polygon points="384,132.88 340,154.88 340,254 384,232" fill="#582f87"/><polygon points="340,110.88 384,132.88 340,154.88 296,132.88" fill="#7B42BC"/><text x="340" y="282" text-anchor="middle" class="lbl">Enterprise IaC</text><ellipse cx="500" cy="236.4" rx="45.76" ry="22" fill="#9fb6cf" opacity="0.30" filter="url(#soft)"/><polygon points="456,129.92 500,151.92 500,254 456,232" fill="#193672"/><polygon points="544,129.92 500,151.92 500,254 544,232" fill="#244da4"/><polygon points="500,107.92 544,129.92 500,151.92 456,129.92" fill="#326CE5"/><text x="500" y="282" text-anchor="middle" class="lbl">Kubernetes</text><text x="500" y="298" text-anchor="middle" class="lbl">AKS</text><ellipse cx="660" cy="236.4" rx="45.76" ry="22" fill="#9fb6cf" opacity="0.30" filter="url(#soft)"/><polygon points="616,138.8 660,160.8 660,254 616,232" fill="#005b61"/><polygon points="704,138.8 660,160.8 660,254 704,232" fill="#00838c"/><polygon points="660,116.8 704,138.8 660,160.8 616,138.8" fill="#00b7c3"/><text x="660" y="282" text-anchor="middle" class="lbl">Supply Chain</text><ellipse cx="820" cy="236.4" rx="45.76" ry="22" fill="#9fb6cf" opacity="0.30" filter="url(#soft)"/><polygon points="776,144.72 820,166.72 820,254 776,232" fill="#7a3400"/><polygon points="864,144.72 820,166.72 820,254 864,232" fill="#af4a00"/><polygon points="820,122.72 864,144.72 820,166.72 776,144.72" fill="#F46800"/><text x="820" y="282" text-anchor="middle" class="lbl">Observability</text><rect x="330" y="320" width="340" height="2" rx="1" fill="url(#rule)" opacity="0.7"/><text x="500" y="350" text-anchor="middle" class="lblb" style="letter-spacing:3px">BUILD. AUTOMATE. SECURE. OBSERVE.</text><text x="500" y="372" text-anchor="middle" class="foot">panels generated from profile.config.json &#183; refreshed daily</text></g>
+</svg>

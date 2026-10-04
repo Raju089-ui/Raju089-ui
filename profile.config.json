@@ -1,0 +1,70 @@
+{
+  "name": "Raju Singh",
+  "handle": "Raju089-ui",
+  "role": "Azure Engineer",
+  "location": "Pune, India",
+  "tagline": "Build. Automate. Secure. Observe.",
+  "intro": "Azure and Kubernetes infrastructure, built with Terraform and shipped through pipelines that check their own work.",
+
+  "stack": [
+    { "name": "Azure",      "color": "#0078d4", "weight": 1.00 },
+    { "name": "Terraform",  "color": "#7B42BC", "weight": 0.95 },
+    { "name": "Kubernetes", "color": "#326CE5", "weight": 0.92 },
+    { "name": "Docker",     "color": "#2496ED", "weight": 0.84 },
+    { "name": "AKS",        "color": "#0b8ce8", "weight": 0.88 },
+    { "name": "Helm",       "color": "#0F1689", "weight": 0.66 },
+    { "name": "Jenkins",    "color": "#D33833", "weight": 0.72 },
+    { "name": "GitLab CI",  "color": "#FC6D26", "weight": 0.74 },
+    { "name": "Prometheus", "color": "#E6522C", "weight": 0.70 },
+    { "name": "Grafana",    "color": "#F46800", "weight": 0.70 },
+    { "name": "Linux",      "color": "#C9A227", "weight": 0.80 },
+    { "name": "Python",     "color": "#3572A5", "weight": 0.64 }
+  ],
+
+  "pipeline": [
+    { "stage": "Code",    "tool": "GitLab",            "color": "#FC6D26" },
+    { "stage": "Build",   "tool": "Jenkins",           "color": "#D33833" },
+    { "stage": "Scan",    "tool": "SonarQube · Trivy", "color": "#4E9BCD" },
+    { "stage": "Sign",    "tool": "Cosign",            "color": "#7B42BC" },
+    { "stage": "Gate",    "tool": "OPA · Kyverno",     "color": "#0078d4" },
+    { "stage": "Deploy",  "tool": "AKS · Helm",        "color": "#326CE5" },
+    { "stage": "Observe", "tool": "Grafana · Loki",    "color": "#F46800" }
+  ],
+
+  "projects": [
+    {
+      "title": "Terraform AKS Infrastructure",
+      "blurb": "Reusable modules for enterprise Azure: networking, NSGs, AKS, ACR, Key Vault, Log Analytics, App Gateway.",
+      "tags": ["Terraform", "AKS", "Key Vault"],
+      "color": "#7B42BC",
+      "url": "https://github.com/Raju089-ui/Terraform_infra"
+    },
+    {
+      "title": "K8s Supply Chain Lab",
+      "blurb": "Signed images, admission policy and runtime rules, wired end to end so a bad artifact never reaches a node.",
+      "tags": ["Cosign", "Kyverno", "Falco"],
+      "color": "#326CE5",
+      "url": "https://github.com/Raju089-ui/k8s-supply-chain-lab"
+    },
+    {
+      "title": "Azure Lifecycle Automation",
+      "blurb": "Terraform and Azure DevOps patterns that keep every environment deploying the same way.",
+      "tags": ["Azure DevOps", "CI/CD"],
+      "color": "#0078d4",
+      "url": "https://github.com/Raju089-ui/Terraform-Azure-Lifecycle-Demo"
+    }
+  ],
+
+  "focus": [
+    { "name": "Advanced Azure",     "color": "#0078d4", "weight": 0.95 },
+    { "name": "Enterprise IaC",     "color": "#7B42BC", "weight": 0.88 },
+    { "name": "Kubernetes / AKS",   "color": "#326CE5", "weight": 0.92 },
+    { "name": "Supply Chain",       "color": "#00b7c3", "weight": 0.80 },
+    { "name": "Observability",      "color": "#F46800", "weight": 0.72 }
+  ],
+
+  "links": [
+    { "label": "github.com/Raju089-ui", "accent": true },
+    { "label": "Pune, India" }
+  ]
+}

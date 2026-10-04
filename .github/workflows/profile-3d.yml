@@ -8,7 +8,8 @@ on:
   push:
     branches: [main, master]
     paths:
-      - "scripts/generate_3d_dashboard.py"
+      - "scripts/**"
+      - "profile.config.json"
       - ".github/workflows/profile-3d.yml"
 
 permissions:
@@ -50,6 +51,13 @@ jobs:
             --theme azure \
             --out profile-3d/dashboard-light.svg
 
+      - name: Render static panels (both themes)
+        run: |
+          python3 scripts/build_profile_3d.py \
+            --theme azure --out profile-3d
+          python3 scripts/build_profile_3d.py \
+            --theme azure-dark --out profile-3d --suffix=-dark
+
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
@@ -59,5 +67,5 @@ jobs:
             echo "No visual change today."
             exit 0
           fi
-          git commit -m "chore: refresh 3D profile dashboard [skip ci]"
+          git commit -m "chore: refresh 3D profile panels [skip ci]"
           git push
