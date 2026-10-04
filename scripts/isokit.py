@@ -262,7 +262,15 @@ BASE_CSS = """
 .chip  { font: 500 11px 'Segoe UI', Ubuntu, sans-serif; letter-spacing: .4px; }
 .foot  { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: %(faint)s; }
 .tile  { font: 700 13px 'Segoe UI', Ubuntu, sans-serif; letter-spacing: .3px; }
-.rise  { animation: rise 1s cubic-bezier(.2,.8,.3,1) both; }
+
+/* The panel must be fully visible with no animation at all: anything that
+   starts at opacity 0 renders blank wherever animations are blocked
+   (reduced-motion, sanitisers, static rasterisers). So the entrance is an
+   enhancement layered on top of a visible default, never a prerequisite. */
+.rise  { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  .rise { animation: rise 1s cubic-bezier(.2,.8,.3,1) 1 normal none running; }
+}
 @keyframes rise { from { opacity: 0; transform: translateY(20px) }
                   to   { opacity: 1; transform: translateY(0) } }
 """

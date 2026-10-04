@@ -399,7 +399,10 @@ def build_svg(user, theme_name):
     .foot { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: %(muted)s; }
     .peak { animation: pulse 3.6s ease-in-out infinite; }
     @keyframes pulse { 0%%,100%% { opacity: 1 } 50%% { opacity: .62 } }
-    .rise { animation: rise 1.1s cubic-bezier(.2,.8,.3,1) both; }
+    .rise { opacity: 1; }
+    @media (prefers-reduced-motion: no-preference) {
+      .rise { animation: rise 1.1s cubic-bezier(.2,.8,.3,1) 1 normal none running; }
+    }
     @keyframes rise { from { opacity: 0; transform: translateY(26px) }
                       to   { opacity: 1; transform: translateY(0) } }
     """ % t
