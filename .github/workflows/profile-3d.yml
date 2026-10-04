@@ -1,0 +1,63 @@
+name: 3D Profile Dashboard
+
+on:
+  schedule:
+    # 00:30 UTC daily = 06:00 IST
+    - cron: "30 0 * * *"
+  workflow_dispatch:        # manual "Run workflow" button
+  push:
+    branches: [main, master]
+    paths:
+      - "scripts/generate_3d_dashboard.py"
+      - ".github/workflows/profile-3d.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-3d
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render dark dashboard (azure-dark)
+        env:
+          # PROFILE_TOKEN = classic PAT with read:user (+ repo for private stats).
+          # Falls back to the built-in token, which sees public data only.
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/generate_3d_dashboard.py \
+            --user "${GITHUB_REPOSITORY_OWNER}" \
+            --theme azure-dark \
+            --out profile-3d/dashboard-dark.svg
+
+      - name: Render light dashboard (azure)
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/generate_3d_dashboard.py \
+            --user "${GITHUB_REPOSITORY_OWNER}" \
+            --theme azure \
+            --out profile-3d/dashboard-light.svg
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-3d/
+          if git diff --staged --quiet; then
+            echo "No visual change today."
+            exit 0
+          fi
+          git commit -m "chore: refresh 3D profile dashboard [skip ci]"
+          git push
