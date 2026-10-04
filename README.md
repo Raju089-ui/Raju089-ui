@@ -45,7 +45,11 @@ Reusable Terraform and Azure DevOps patterns for consistent infrastructure deplo
 
 ## 📈 GITHUB ACTIVITY
 
-<img src="./assets/3d-contrib.svg" alt="3D GitHub Contributions" width="900"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d/dashboard-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./profile-3d/dashboard-light.svg">
+  <img src="./profile-3d/dashboard-light.svg" alt="3D GitHub Activity Dashboard" width="900"/>
+</picture>
 
 <br><br>
 
